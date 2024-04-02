@@ -1,8 +1,9 @@
 {
-  "name": "use-eventsource",
+  "name": "@suqingdong/use-eventsource",
   "version": "1.0.0",
   "description": " A custom React hook for managing Server-Sent Events (SSE) connections in React applications.",
-  "main": "dist/index.js",
+  "main": "dist/bundle.js",
+  "access": "public",
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
