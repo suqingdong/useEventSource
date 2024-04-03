@@ -1,7 +1,16 @@
 {
-    "compilerOptions": {
-        "target": "ES5",
-        "module": "CommonJS",
-        "strict": true
-    }
+  "compilerOptions": {
+    "target": "es5", // 设置目标语言的版本，以确保兼容性
+    "module": "esnext", // 设置模块化系统为 CommonJS
+    "esModuleInterop": true, // 启用 ES 模块互操作性，以允许默认导入
+    "strict": true, // 启用所有严格类型检查选项
+    "jsx": "react", // 支持 JSX，并且将 JSX 改为 React.createElement 的形式
+    "moduleResolution": "node", // 使用 Node.js 的模块解析策略
+    "declaration": false, // 是否生成相应的 .d.ts 文件
+    "baseUrl": ".",   // 解析非绝对模块名称的基地址
+
+  },
+  "include": [
+    "src/**/*", // 包含需要编译的文件
+  ],
 }

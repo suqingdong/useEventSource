@@ -13,8 +13,7 @@ npm install @suqingdong/use-eventsource
 ## Usage
 
 ```javascript
-import React from 'react';
-import useEventSource from '@suqingdong/use-eventsource';
+import { useEventSource } from '@suqingdong/use-eventsource';
 
 const MyComponent = () => {
   const { data, reconnect, terminate } = useEventSource({ url: 'your-sse-endpoint' });

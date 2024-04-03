@@ -5,7 +5,9 @@ module.exports = {
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: 'index.js',
+        libraryTarget: "umd",
+        globalObject: "this", 
     },
     module: {
         rules: [
@@ -19,4 +21,7 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
     },
+    externals: {
+        react: 'React',
+    }
 };
